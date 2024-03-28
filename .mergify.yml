@@ -1,0 +1,39 @@
+defaults:
+  actions:
+    queue:
+      method: squash
+      
+queue_rules:
+  - name: regular
+    allow_inplace_checks: False
+    allow_checks_interruption: True
+    checks_timeout: 2h
+    disallow_checks_interruption_from_queues:
+      - regular
+    batch_size: 16
+    batch_max_wait_time: 2m
+    priority_rules:
+      - name: high
+        priority: high
+        conditions:
+          - label=priority-merge
+      - name: medium
+        priority: medium
+        conditions:
+          - label=merge
+      - name: low
+        priority: low
+        conditions:
+          - label=merge
+
+pull_request_rules:
+  - name: Regular
+    conditions:
+      - and:
+          - "#approved-reviews-by>=0"
+          - "#review-requested=0"
+          - label=merge
+    actions:
+      queue:
+        allow_merging_configuration_change: True
+        name: regular
