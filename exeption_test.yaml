@@ -1,0 +1,18 @@
+vulnerabilities:
+  - id: CVE-1111-2222
+    expiration: 2021/12/28
+  - id: CVE-2222-3333
+  - id: CVE-2222-3333
+    expiration: 2021/12/28
+secret_detection:
+  secrets:
+    - test_secret
+
+  paths:
+    - /Users/tom/demos/github/awesome_fs_demo/index.js
+    - "*/bla/*"
+
+  finding_hashes:
+    - 0afe97cde0edc71a76359e5acb8f153c17ce1cab3f558002bb1444d3c5a016ea
+    - c507824341e1992984c6b8bea722ecf6e2a68c13ac9c5e926d7903b5a8d07eeb
+    - 70bcc81daeb5fe8afb312d462589e1a054e4adadfa0927655810e49d241d767a
