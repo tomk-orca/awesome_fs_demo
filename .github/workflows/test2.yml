@@ -24,3 +24,6 @@ jobs:
 # Do not collect this one        
 # - name: Run a local action
 #        uses: actions/setup-node
+# Do not collect this one        
+# - name: Run a local action
+#        uses: actions/setup-node
