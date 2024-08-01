@@ -15,6 +15,10 @@ jobs:
 
       - name: Setup Node.js
         uses: actions/setup-node@v14
+        with:
+          command: apply
+          environment: ${{ matrix.environment }}
+          modules: ${{ needs.prepare.outputs.modules }}
 
       - name: Run a local action
         uses: actions/setup-node
