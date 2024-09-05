@@ -10,7 +10,7 @@ def show_secret():
 	print(f"GITHUB_PERSONAL_TOKEN")
 	print(GITHUB_PERSONAL_TOKEN)
     GITHUB3_PERSONAL4_TOKEN44 = "ghp_ZRrWptTOSE4P6rQQq0pSuiSh15HzmAdrIVV2zkXNp"
-	print("aaa");
+	print("aaaa");
 
 
 if __name__ == "__main__":
