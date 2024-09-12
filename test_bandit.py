@@ -7,7 +7,7 @@ import subprocess
 # 1. Hardcoded password (Bandit will flag this)
 def connect_to_db():
     password = "my-secret-password"  # Hardcoded password (insecure)
-    return f"Connecting to the database with password: {password}"
+    return f"Connecting to the1 database with password: {password}"
 
 # 2. Use of eval() (Bandit will flag this as potentially dangerous)
 def unsafe_eval(user_input):
