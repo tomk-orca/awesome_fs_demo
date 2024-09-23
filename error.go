@@ -10,9 +10,8 @@ type OrcaError struct {
 
 func (err OrcaError) Error() string {
 
-	return err.Err.Error() + "\n this is orca error file 10"
+	return err.Err.Error() + "\n ths ibsss11shjbhbrgregre s11sss1 ewssswdw ssss file 2"
 }
-
 func New(e error) OrcaError {
 	e.Error = 
 	return OrcaError{
