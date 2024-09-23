@@ -1,7 +1,7 @@
 defaults:
   actions:
     queue:
-      method: squash
+      method: merge
       
 queue_rules:
   - name: regular
